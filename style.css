@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* below are the variables defined for later use */
+
+:root {
+    --lg-lightcolor : linear-gradient(to left, rgba(116,235,213,0.6), rgba(159,172,230,0.6));
+    --lg-color : linear-gradient(to left, #74ebd5,#9face6);
+}
+
+body{
+    background-image: var(--lg-lightcolor),url('https://st2.depositphotos.com/1021722/7053/i/450/depositphotos_70531635-stock-photo-art-spring-flowers-frame-background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width : 100vw;
+}
+
+ .header{
+    padding: 20px 40px; 
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+/* css for button */
+.btn{
+    background: var(--lg-color);
+    border: none;
+    border-radius: 6px;
+    color: blueviolet;
+    outline: none;
+    display: block;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, #74ebd5,#9fa);
+}
+
+.form-control{ 
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+/* css for label */
+.form-control label{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* css for input */
+.form-control input{
+    width: 100%;
+    border: 0.5px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* if the input of user is correct then the border will be of green color else color will be red */
+
+.error{
+    color: red;
+}
+
+
